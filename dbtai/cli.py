@@ -67,7 +67,7 @@ def setup():
                     ),
         inquirer.List("openai_model_name",
                     message = "Model Name",
-                        choices = ["gpt-3.5-turbo", "gpt-4-turbo-preview"],
+                        choices = ["gpt-3.5-turbo", "gpt-4-turbo-preview", "gpt-4o"],
                     default = "gpt-4-turbo-preview",
                     ignore = lambda answers: answers['backend'] != "OpenAI"
                     ),
